@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side-Bar-With-Tailwind</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ===== Box Icon CDN Link ===== -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- ==== Tailwind CDN link ==== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="relative">
+        <nav class="fixed top-0 left-0 w-80 h-screen bg-gray-200 flex flex-col items-center justify-between py-8 hidden">
+            <a href="index.html"><img src="images/logo.png" alt="" class="w-32"></a>
+            <ul class="flex flex-col items-center gap-4 uppercase text-gray-800 text-xl">
+                <li class="hover:translate-x-3 duration-500"><a href="#">Earn With Pathao</a></li>
+                <li class="hover:translate-x-3 duration-500"><a href="#">Services</a></li>
+                <li class="hover:translate-x-3 duration-500"><a href="#">Help Desk</a></li>
+                <li class="hover:translate-x-3 duration-500"><a href="#">Blog</a></li>
+                <li class="hover:translate-x-3 duration-500"><a href="#">Contact</a></li>
+            </ul>
+            <div class="">
+                <select name="" id="" class="bg-transparent text-xl p-4 outline-none border-none">
+                    <option value="lang">English</option>
+                    <option value="lang">Bangla</option>
+                </select>
+            </div>
+        </nav>
+        <div class="fixed top-4 right-4 w-9 h-9 flex items-center justify-center cursor-pointer"><i class='bx bx-menu text-4xl' id="menuBar"></i></div>
+    </header>
+
+    <main>
+        <section class="w-full h-screen flex items-center justify-center bg-orange-600">
+            <div class="text-5xl font-medium text-center">Earn Wiht Pathao</div>
+        </section>
+
+        <section class="w-full h-screen flex items-center justify-center bg-gray-600">
+            <div class="text-5xl font-medium">Services</div>
+        </section>
+
+        <section class="w-full h-screen flex items-center justify-center bg-sky-600">
+            <div class="text-5xl font-medium">Contacts</div>
+        </section>
+    </main>
+
+    <!-- ===== Script File ===== -->
+    <script src="script/app.js"></script>
+</body>
+</html>
